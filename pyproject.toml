@@ -1,0 +1,20 @@
+[build-system]
+requires = ["maturin>=1.4,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "signpy"
+description = "Sign messages with ease"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Security :: Cryptography",
+]
+license = "MIT"
+readme = "README.md"
+dynamic = ["version"]
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
